@@ -11,7 +11,7 @@ function Navbartop() {
         <>
             <nav className="navbar  navbar-expand-lg navbar-dark bg-dark  shadow fixed-top " >
                 <div className="container ">
-                    <a className="navbar-brand " href="/">
+                    <a className="navbar-brand " href="/react-test">
                         Home
                     </a>
                     <button

@@ -14,7 +14,7 @@ function Cards({cardData}) {
                         <div className="card-body">
                             <h5 className="card-title text-truncate fs-6">{item.title}</h5>
                             <p className="card-text"></p>
-                            <a href={`/movies/${item.id}`} target="_blank" className="btn btn-primary">
+                            <a href={`/react-test/movies/${item.id}`} target="_blank" className="btn btn-primary">
                                 Details
                             </a>
                         </div>

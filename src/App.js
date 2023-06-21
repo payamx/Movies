@@ -26,15 +26,15 @@ function App() {
     return (
         <div>
             <Provider store={store} >
-                    <BrowserRouter>
+                    <BrowserRouter >
 
                         <Routes>
-                            <Route element={<SharedLinks/>}>
-                                <Route index element={<Home/>}/>
-                                <Route path="/movies/:cardId" element={<Singlecard/>}/>
+                            <Route element={<SharedLinks/>} >
+                                <Route  path="/react-test" index element={<Home/>}/>
+                                <Route path="/react-test/movies/:cardId" element={<Singlecard/>}/>
                                 <Route path="*" element={<h1>error page</h1>}/>
-                                <Route path="login" element={<Login/>}/>
-                                <Route path="signup" element={<Signup/>}/>
+                                <Route path="/react-test/login" element={<Login/>}/>
+                                <Route path="/react-test/signup" element={<Signup/>}/>
                                 <Route path="counter" element={<Counter/>}/>
                                 <Route path="redux" element={<ReduxTest/>} />
 
