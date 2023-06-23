@@ -15,9 +15,9 @@ const SearchBar = ({setSearch}) => {
                                     setSearch(e.target.value)
                                 }} className="form-control"
                                        placeholder="Search..."/>
-                                <div className="input-group-append">
-                                    <button type="submit" className="btn btn-primary ms-3">
-                                        search<i className="fa fa-search"></i>
+                                <div className="input-group-append ">
+                                    <button type="submit" className="btn btn-warning text-dark ms-3">
+                                        search<i className="fa fa-search ps-2"></i>
                                     </button>
                                 </div>
                             </div>

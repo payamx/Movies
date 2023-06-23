@@ -17,6 +17,7 @@ import ReduxTest from "./Page/ReduxTest";
 import {store} from "./Redux/Store"
 import {Comment} from "./Component/Comment";
 import Category from "./Component/Category";
+import Home2 from "./Component/Home2";
 
 function App() {
 

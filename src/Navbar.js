@@ -1,6 +1,4 @@
 
-
-import category from "./Component/Category";
 import Category from "./Component/Category";
 function Navbartop() {
 
@@ -9,7 +7,7 @@ function Navbartop() {
 
     return (
         <>
-            <nav className="navbar  navbar-expand-lg navbar-dark bg-dark  shadow fixed-top " >
+            <nav className="navbar  navbar-expand-lg navbar-dark bg-dark  shadow d-flex  " >
                 <div className="container ">
                     <a className="navbar-brand " href="/react-test">
                         Home
@@ -23,7 +21,7 @@ function Navbartop() {
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
-                        <span className="navbar-toggler-icon"></span>
+                        <span className="navbar-toggler-icon " ></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -92,6 +90,7 @@ function Navbartop() {
             </nav>
 
             {/* carousel */}
+
 
             <div
                 id="carouselExampleCaptions"

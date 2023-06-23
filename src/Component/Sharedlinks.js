@@ -9,12 +9,15 @@ const Sharedlinks = () => {
     return (
         <>
 
+            <div>
 
-            <Navbartop/>
+                <Navbartop/>
 
-            <Outlet/>
+                <Outlet/>
 
-            <Footer/>
+                <Footer/>
+            </div>
+
         </>
 
 

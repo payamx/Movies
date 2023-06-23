@@ -38,6 +38,26 @@ const Home = () => {
 //gettin data from api per page
     useEffect(() => {
 
+        const getData = async () => {
+            try {
+                dispatch({type: ACTION_FETCH.FETCH_START})
+                const response = await axios.get(`http://moviesapi.ir/api/v1/movies`);
+                dispatch({type: ACTION_FETCH.FETCH_SUCCESS, data: response.data.data});
+                console.log(response.data.data)
+                setMetaData(response.data.metadata)
+            } catch (err) {
+                dispatch({type: ACTION_FETCH.FETCH_FAIL})
+            } finally {
+                // dispatch({type: ACTION_FETCH.FINALLY})
+            }
+        };
+
+        getData()
+
+    }, []);
+
+    useEffect(() => {
+
         const getData = async (currentPage) => {
             try {
                 dispatch({type: ACTION_FETCH.FETCH_START})
@@ -52,7 +72,7 @@ const Home = () => {
             }
         };
 
-        getData(currentPage);
+        getData(currentPage).then(r => r);
 
     }, [currentPage]);
 
