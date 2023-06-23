@@ -52,7 +52,7 @@ const Home = () => {
             }
         };
 
-        getData()
+        getData().then(r=>r);
 
     }, []);
 

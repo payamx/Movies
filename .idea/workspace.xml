@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85be6539-3eb0-472e-a3b7-9c17ff02b155" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Component/Home2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/SearchBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/Sharedlinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Sharedlinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Navbar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +74,7 @@
       <updated>1687337074655</updated>
       <workItem from="1687337075727" duration="7325000" />
       <workItem from="1687413417631" duration="15478000" />
-      <workItem from="1687504980982" duration="1397000" />
+      <workItem from="1687504980982" duration="2725000" />
     </task>
     <servers />
   </component>
