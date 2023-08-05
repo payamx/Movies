@@ -14,10 +14,18 @@
     }
 }
 
+@media only screen and (min-width: 992px) {
+    .item-max-height{max-height:600px}
+}
+
+.color-grey{
+background-color: #495057;
+}
 .dark-mode{
     background-color: #282c34;
     color: white;
 }
+
 
 .App-header {
     background-color: #282c34;

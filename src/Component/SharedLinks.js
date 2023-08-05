@@ -1,18 +1,17 @@
 import React, {useState} from 'react'
 import {Outlet} from 'react-router-dom'
-import Navbartop from '../Navbar'
 import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 
-const Sharedlinks = () => {
+const SharedLinks = () => {
 
     return (
         <>
 
             <div>
 
-                <Navbartop/>
-
+                <Navbar/>
                 <Outlet/>
 
                 <Footer/>
@@ -24,4 +23,4 @@ const Sharedlinks = () => {
     )
 }
 
-export default Sharedlinks
+export default SharedLinks

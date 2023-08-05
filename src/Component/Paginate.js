@@ -1,80 +1,81 @@
 import React from "react";
-import { v4 as uuidv4 } from 'uuid';
-const Paginate = ({currentPage, totalPages, setCurrentPage}) => {
 
-
-    let uuid = crypto.randomUUID();
-
+const Paginate = ({page, total, setPage}) => {
 
     const pageNumbers = [];
 
-    for (let i = parseInt(currentPage) - 1; i >= currentPage - 3; i--) {
-        if (i > 0 && i <= totalPages) {
+    for (let i = parseInt(page) - 1; i >= page - 3; i--) {
+        if (i > 0 && i <= total) {
             pageNumbers.push(i);
         }
     }
 
-    for (let i = parseInt(currentPage); i <= currentPage + 3; i++) {
-        if (i <= totalPages && i > 0) {
+    for (let i = parseInt(page); i <= page + 3; i++) {
+        if (i <= total && i > 0) {
+
             pageNumbers.push(i);
 
         }
-
     }
 
     pageNumbers.sort((a, b) => a - b);
 
     const previousPage = () => {
-        if (currentPage - 1 >= 1) {
-            setCurrentPage(currentPage - 1);
+        if (page - 1 >= 1) {
+
+            setPage(prev => prev - 1);
         }
     };
 
     const nextPage = () => {
-        if (currentPage + 1 <= totalPages) {
-            setCurrentPage(currentPage + 1);
+        if (page + 1 <= 25) {
+            setPage(prev => prev + 1)
         }
     };
 
-    return (<>
-        <div>
-            <nav  aria-label="Page navigation example mt-5">
-                <ul className="pagination justify-content-center">
-                    <li className="page-item ">
-                        <a className="page-link" href="" onClick={previousPage}>
-                            Previous
-                        </a>
-                    </li>
-                    <li className="page-item ">
-                        <a className="page-link">...</a>
-                    </li>
-                    {pageNumbers?.map((number) => (<>
-                        <li
-                            className="page-item"
-                            onClick={() => setCurrentPage(number)}
-
-                        >
-                            <a
-                                className={currentPage === number ? "page-link active" : "page-link"}
-                                href="#num" key={uuidv4()}
-                            >
-                                {number}
+    return (
+        <>
+            <div>
+                <nav aria-label="Page navigation example mt-5">
+                    <ul className="pagination justify-content-center">
+                        <li className="page-item">
+                            <a className="page-link" href="" onClick={previousPage}>
+                                Previous
                             </a>
                         </li>
-                    </>))}
-                    <li className="page-item ">
-                        <a className="page-link">...</a>
-                    </li>
-                    <li className="page-item">
-                        <a className="page-link" href="" onClick={nextPage}>
-                            Next
-                        </a>
+                        <li className="page-item">
+                            <a className="page-link">...</a>
+                        </li>
+                        {pageNumbers?.map((number, index) => (<div key={index}>
+                            <li
+                                className="page-item"
+                                onClick={() => {
+                                    setPage(number)
+                                }}
+                            >
+                                <a
+                                    className={page === number ? "page-link active" : "page-link"}
 
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </>);
+                                    href="#"
+                                >
+                                    {number}
+                                </a>
+                            </li>
+                        </div>))}
+                        <li className="page-item">
+                            <a className="page-link">...</a>
+                        </li>
+                        <li className="page-item">
+                            <a className="page-link" href="" onClick={nextPage}>
+                                Next
+                            </a>
+
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </>
+    );
 };
 
 export default Paginate;

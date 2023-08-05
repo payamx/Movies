@@ -1,24 +1,37 @@
 import React from 'react';
 
-export const initialState = {
-    data: [],
-    loading: false,
-    error: false,
 
-}
 export const ACTION_FETCH = {
     FETCH_START: "FETCH_START",
     FETCH_SUCCESS: "FETCH_SUCCESS",
     FETCH_FAIL: "FETCH_FAIL",
-    FINALLY: "FINALLY"
+    FINALLY: "FINALLY",
+    FETCH_GENRE: "FETCH_GENRE",
+    FAIL_GENRE: "FAIL_GENRE",
+    FETCH_CATEGORY: "FETCH_CATEGORY",
+    CURRENT_PAGE: "CURRENT_PAGE",
+    SEARCH_MOVIE: "SEARCH_MOVIE"
+
+}
+export let initialState = {
+    data: [] ,
+    metaData: [],
+    loading: false,
+    error: false,
+    genre: [],
+    categoryData: [],
+    search: null,
+    currentPage: 1 ,
 
 
 }
+
 export const axiosReducer = (state, action) => {
     switch (action.type) {
 
         case ACTION_FETCH.FETCH_START:
             return {
+                ...state,
                 data: [],
                 loading: true,
                 error: false
@@ -26,25 +39,60 @@ export const axiosReducer = (state, action) => {
 
         case ACTION_FETCH.FETCH_SUCCESS:
             return {
-                data: action.data,
+                ...state,
+                data: action.data.data,
+                metaData: action.data.metadata,
                 loading: false,
                 error: false
+
+
             };
 
         case ACTION_FETCH.FETCH_FAIL:
             return {
+                ...state,
                 data: [],
                 loading: false,
-                error: false,
+                error: true,
 
-            }
+            };
         case ACTION_FETCH.FINALLY:
             return {
-
+                ...state,
                 data: [],
                 loading: false,
                 error: false
+            };
+        case  ACTION_FETCH.FETCH_GENRE:
+            return {
+                ...state,
+                genre: action.data
+
             }
+        case ACTION_FETCH.FAIL_GENRE:
+            return {
+                ...state, genre: " failed genre"
+            }
+        case ACTION_FETCH.FETCH_CATEGORY:
+
+            return {
+                ...state,
+                categoryData: action.cat,
+
+            }
+        case ACTION_FETCH.CURRENT_PAGE:
+            return {
+                ...state,
+                currentPage: action.current,
+
+            }
+        case ACTION_FETCH.SEARCH_MOVIE:
+            return {
+                ...state,
+                search: action.search,
+            }
+
+
         default:
             return state;
 
@@ -52,24 +100,10 @@ export const axiosReducer = (state, action) => {
 
 
 }
-export const ACTION_TYPES = {
-    increment: "INCREMENT",
-    decrement: "DECREMENT",
-    reset: "RESET"
-}
-export const initialCounter = {count: 0}
-export const counterReducer = (state, action) => {
-    switch (action.type) {
-        case ACTION_TYPES.increment:
-            return {count: state.count++}
-        case ACTION_TYPES.decrement:
-            return {count: state.count--}
-        case ACTION_TYPES.reset:
-            return {count: state.count = 0}
-        default:
-            return state;
-
-    }
 
 
-}
+
+
+
+
+

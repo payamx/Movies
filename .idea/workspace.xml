@@ -5,12 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85be6539-3eb0-472e-a3b7-9c17ff02b155" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/Carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/DownloadLink.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/GenreCardList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/MovieCards.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/MovieScreenshot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component/Navbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Page/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Card.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Category.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Home2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Paginate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Paginate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/SearchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Sharedlinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/SharedLinks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Singlecard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/SingleCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contex/Authcontex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Navbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Page/ReduxTest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reducer/Fetchreducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reducer/Fetchreducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/counter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,12 +72,14 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/payam/WebstormProjects/react-test/src/Component&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;/home/payam/node-v18/bin/node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -48,6 +90,16 @@
         <entry key="com.haulmont.rcb.reactInspector" value="false" />
       </map>
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Component" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Page" />
+      <recent name="$PROJECT_DIR$/src/Component" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -74,12 +126,55 @@
       <updated>1687337074655</updated>
       <workItem from="1687337075727" duration="7325000" />
       <workItem from="1687413417631" duration="15478000" />
-      <workItem from="1687504980982" duration="2725000" />
+      <workItem from="1687504980982" duration="11728000" />
+      <workItem from="1687579871493" duration="20850000" />
+      <workItem from="1687664793030" duration="26006000" />
+      <workItem from="1687841641098" duration="2679000" />
+      <workItem from="1688187328716" duration="3428000" />
+      <workItem from="1688295506117" duration="599000" />
+      <workItem from="1688387654748" duration="4494000" />
+      <workItem from="1688443274481" duration="24608000" />
+      <workItem from="1688546156861" duration="10066000" />
+      <workItem from="1688623542393" duration="12245000" />
+      <workItem from="1688744159534" duration="1327000" />
+      <workItem from="1688820499116" duration="11896000" />
+      <workItem from="1688902331928" duration="10272000" />
+      <workItem from="1688981448239" duration="646000" />
+      <workItem from="1689669477304" duration="13962000" />
+      <workItem from="1689699848589" duration="1549000" />
+      <workItem from="1689756286392" duration="4254000" />
+      <workItem from="1689838312002" duration="10621000" />
+      <workItem from="1689922721451" duration="24227000" />
+      <workItem from="1690025647038" duration="598000" />
+      <workItem from="1690115522186" duration="10020000" />
+      <workItem from="1690261314651" duration="4994000" />
+      <workItem from="1690432696114" duration="1891000" />
+      <workItem from="1690464839907" duration="2852000" />
+      <workItem from="1690552683873" duration="7388000" />
+      <workItem from="1690603230194" duration="15029000" />
+      <workItem from="1690691177331" duration="9093000" />
+      <workItem from="1690790920521" duration="9581000" />
+      <workItem from="1690873711388" duration="15458000" />
+      <workItem from="1690948031916" duration="7791000" />
+      <workItem from="1691045951115" duration="11143000" />
+      <workItem from="1691131718430" duration="3772000" />
+      <workItem from="1691218534864" duration="9384000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

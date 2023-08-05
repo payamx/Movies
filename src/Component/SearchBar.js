@@ -2,28 +2,20 @@ import React from 'react';
 
 const SearchBar = ({setSearch}) => {
 
+    return (<>
+            <div className="container bg-warning  rounded-pill my-5 shadow-lg">
+                        <div className="   mx-auto py-2   my-5">
+                            <form>
+                                <div>
+                                    <input type="text" onChange={(e) => {
+                                        setSearch(e.target.value)
+                                    }} className="form-control rounded-4"
+                                           placeholder="Search Movie..."/>
 
-    return (
-        <>
-            <div className=" container ">
-                <div className="row mb-5">
-                    <div className="col-md-6 col-9 mt-3 mx-auto">
-                        <form>
-                            <div className="input-group">
-                                <input type="text" onChange={(e) => {
-
-                                    setSearch(e.target.value)
-                                }} className="form-control"
-                                       placeholder="Search..."/>
-                                <div className="input-group-append ">
-                                    <button type="submit" className="btn btn-warning text-dark ms-3">
-                                        search<i className="fa fa-search ps-2"></i>
-                                    </button>
                                 </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+                            </form>
+                        </div>
+
             </div>
 
         </>

@@ -33,7 +33,7 @@ const Footer = () => {
                                 <i className="fas fa-phone me-2" aria-hidden="true"></i>
                                 +982166004343
                             </p>
-                            <p class="  ">
+                            <p >
                                 <i className="fas fa-envelope me-2" aria-hidden="true"></i>
 
                                 <span className="">filmbaz@ust.com</span>
