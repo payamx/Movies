@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react'
-import {useParams} from 'react-router-dom'
+import {useNavigate, useParams} from 'react-router-dom'
 import {Comment} from './Comment'
 import {api} from "../Axios";
 import Links from "./DownloadLink";
 import MovieScreenshot from "./MovieScreenshot";
 import DownloadLink from "./DownloadLink";
-
+import CarouselComponent from "./CarouselComponent";
 
 const SingleCard = () => {
     const [data, setData] = useState([]);
@@ -38,6 +38,7 @@ const SingleCard = () => {
                         <div className="">
                             <MovieScreenshot images={data.images}/>
                         </div>
+
                         <div className=" my-5 ">
 
                             <div className="  card flex-md-row  bg-opacity-75 text-start shadow-lg">

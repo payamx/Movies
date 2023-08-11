@@ -9,7 +9,6 @@ import SingleCard from "./Component/SingleCard";
 import Signup from "./Page/Signup";
 import GenreCardList from "./Component/GenreCardList";
 import Home from "./Page/Home";
-import Links from "./Component/DownloadLink";
 
 function App() {
 
@@ -18,19 +17,16 @@ function App() {
     return (
         <div>
                     <BrowserRouter >
-
-                        <Routes>
-                            <Route element={<SharedLinks/>} >
-                                <Route  path="/react-test/" index element={<Home/>}/>
-                                <Route path="/react-test/movies/:cardId" element={<SingleCard/>}/>
-                                <Route path="/react-test/:newId" element={<GenreCardList/>}/>
-                                <Route path="/react-test/login" element={<Login/>}/>
-                                <Route path="/react-test/signup" element={<Signup/>}/>
-                                <Route path="*" element={<h1>error page</h1>}/>
-
-                            </Route>
-
-                        </Routes>
+                                <Routes>
+                                    <Route path="react-test"  element={<SharedLinks/>} >
+                                        <Route  index  element={<Home/>}/>
+                                        <Route  path="movies/:cardId" element={<SingleCard/>}/>
+                                        <Route  path=":newId" element={<GenreCardList/>}/>
+                                        <Route  path="login" element={<Login/>}/>
+                                        <Route  path="signup" element={<Signup/>}/>
+                                        <Route  path="*" element={<h1>error page</h1>}/>
+                                    </Route>
+                                </Routes>
 
                     </BrowserRouter>
 

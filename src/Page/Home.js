@@ -4,7 +4,7 @@ import {ACTION_FETCH, axiosReducer, initialState} from "../Reducer/Fetchreducer"
 import MovieCards from "../Component/MovieCards";
 import SearchBar from "../Component/SearchBar";
 import {api} from "../Axios";
-import Carousel from "../Component/Carousel";
+import CarouselComponent from "../Component/CarouselComponent";
 
 const Home = () => {
 
@@ -55,7 +55,7 @@ const Home = () => {
 
         <>
             <div>
-                <Carousel/>
+                <CarouselComponent/>
             </div>
             <div>
                 <div className="container-fluid">

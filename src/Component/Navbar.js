@@ -1,13 +1,13 @@
 import {useEffect, useReducer, useState} from "react";
 import axios from "axios";
 import {ACTION_FETCH, axiosReducer, initialState} from "../Reducer/Fetchreducer";
-import Carousel from "./Carousel";
 import {api} from "../Axios";
-
+import {Link, useNavigate} from "react-router-dom";
 
 const Navbar=()=> {
 
     const [state, dispatch] = useReducer(axiosReducer, initialState);
+    const navigate=useNavigate()
 
     const getGenre = async () => {
         try {
@@ -25,7 +25,7 @@ const Navbar=()=> {
         getGenre().then(r => r);
     }, []);
 
-
+const handleNavigate=(id)=>{ navigate(`/react-test/${id}`)}
     return (
         <>
 
@@ -47,8 +47,9 @@ const Navbar=()=> {
                                         Register
                                     </a>
                                     <ul className="dropdown-menu dropdown-menu-dark m-0 ">
-                                        <li><a className="dropdown-item" href="src#">lgoin</a></li>
-                                        <li><a className="dropdown-item" href="src#">logout</a></li>
+                                        <li><Link className="dropdown-item" to="/react-test/login">login</Link></li>
+                                        <li><Link className="dropdown-item" to="/react-test/signup">Signup</Link></li>
+
                                     </ul>
                                 </li>
                             </ul>
@@ -59,7 +60,7 @@ const Navbar=()=> {
 
                             <ul className="navbar-nav mx-md-4">
                                 <li className="nav-item dropdown ">
-                                    <a className="nav-link dropdown-toggle  " href="src#" role="button"
+                                    <a className="nav-link dropdown-toggle  "  role="button"
                                        data-bs-toggle="dropdown" aria-expanded="false">
                                         Genre
                                     </a>
@@ -69,9 +70,11 @@ const Navbar=()=> {
 
                                             {state.genre?.map((item) => {
                                                 return <li key={item.id}>
-                                                    <a className="dropdown-item bg-transparent  text-warning p-md-4  g-3 fs-5 link-light "
-                                                    href={`/react-test/${item.id}`}
-                                                    > {item.name} </a>
+                                                    <div
+                                                        className="dropdown-item bg-transparent  text-warning p-md-4  g-3 fs-5 link-light pointer "
+                                                     onClick={()=>handleNavigate(item.id)}
+                                                    > {item.name} </div>
+
                                                 </li>
 
                                             })}

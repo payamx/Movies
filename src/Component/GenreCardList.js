@@ -2,9 +2,10 @@ import axios from "axios";
 import {ACTION_FETCH, axiosReducer, initialState} from "../Reducer/Fetchreducer";
 import {useEffect, useReducer, useState} from "react";
 import {useParams} from "react-router-dom";
-import Carousel from "./Carousel";
 import SearchBar from "./SearchBar";
 import MovieCards from "./MovieCards";
+import {api} from "../Axios";
+import CarouselComponent from "./CarouselComponent";
 
 const GenreCardList = () => {
     const [original, setOriginal] = useState(null);
@@ -13,10 +14,10 @@ const GenreCardList = () => {
 
     const getCategory = async () => {
         try {
-            dispatch({type: ACTION_FETCH.FETCH_START})
-            const response = await axios.get(`https://moviesapi.ir/api/v1/genres/${newId}/movies`)
-            setOriginal( response.data.data)
-            dispatch({type: ACTION_FETCH.FETCH_CATEGORY, cat: response.data.data})
+            dispatch({type: ACTION_FETCH.FETCH_START});
+            const response = await api.get(`/genres/${newId}/movies`);
+            setOriginal( response.data.data);
+            dispatch({type: ACTION_FETCH.FETCH_CATEGORY, cat: response.data.data});
         } catch (e) {
             console.log("get cat error ")
         }
@@ -34,7 +35,7 @@ const GenreCardList = () => {
 
     useEffect(() => {
         getCategory().then(r=>r);
-    }, []);
+    }, [newId]);
 
     const SwitchComponent = () => {
 
@@ -47,8 +48,9 @@ const GenreCardList = () => {
 
         <>
             <div>
-                <Carousel/>
+                <CarouselComponent/>
             </div>
+
             <div className="col-11 mx-auto mb-3">
                 <div>
                     <SearchBar setSearch={doSearch}/>

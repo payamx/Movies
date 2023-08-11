@@ -3,6 +3,7 @@ import {useForm} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import axios from "axios";
+import {api} from "../Axios";
 
 const Signup = () => {
     const [error, setError] = useState('');
@@ -18,7 +19,7 @@ const Signup = () => {
     const onsubmit = async (data) => {
         console.log(data, "before sync")
         try {
-            const response = await axios.post("https://moviesapi.ir/api/v1/register",
+            const response = await api.post("/register",
                 JSON.stringify(    {
                     name: "firstName",
                     email: "email",
