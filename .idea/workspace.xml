@@ -7,10 +7,7 @@
     <list default="true" id="85be6539-3eb0-472e-a3b7-9c17ff02b155" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/CarouselComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/CarouselComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/MovieCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/MovieCards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/MovieScreenshot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/MovieScreenshot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component/SingleCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/SingleCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/Navbar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +137,7 @@
       <workItem from="1691661192949" duration="1343000" />
       <workItem from="1691688201493" duration="1748000" />
       <workItem from="1691731900360" duration="18083000" />
-      <workItem from="1691904990917" duration="2016000" />
+      <workItem from="1691904990917" duration="7944000" />
     </task>
     <servers />
   </component>

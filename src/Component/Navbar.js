@@ -66,7 +66,7 @@ const handleNavigate=(id)=>{ navigate(`/react-test/${id}`)}
                                     </a>
 
                                     <ul className=" m-0 dropdown-menu bg-dark  bg-opacity-90   ">
-                                        <div className=" d-md-flex  flex-md-wrap  " style={{width: "900px"}}>
+                                        <div className=" d-inline-flex d-md-flex flex-wrap  w900 row-cols-2 row-cols-md-4" >
 
                                             {state.genre?.map((item) => {
                                                 return <li key={item.id}>

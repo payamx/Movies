@@ -14,8 +14,9 @@
     }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 762px) {
     .item-max-height{max-height:600px}
+    .w900{min-width: 900px}
 }
 
 .color-grey{
