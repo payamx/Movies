@@ -14,7 +14,7 @@ const MovieCards = ({cardData}) => {
             <div>
                 <div className=" row  " id="movie">
                     {cardData?.map((item) => (<div className="col-6  col-md-2 g-3  g-md-4" key={item.id}>
-                        <div className="card card-main card:hover border-0 m-auto  pointer  ">
+                        <div className="card card-main card:hover border-0 m-auto  pointer   ">
                             <div  className="text-decoration-none">
                                 <div onClick={()=>handelClick(item.id)} >
 

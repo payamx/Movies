@@ -32,12 +32,11 @@ const SingleCard = () => {
         <>
             {data &&
                 <div className="">
-
+                    <div className="">
+                        <MovieScreenshot images={data.images}/>
+                    </div>
                     <div className=" container  ">
 
-                        <div className="">
-                            <MovieScreenshot images={data.images}/>
-                        </div>
 
                         <div className=" my-5 ">
 
