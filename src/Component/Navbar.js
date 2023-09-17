@@ -25,7 +25,7 @@ const Navbar=()=> {
         getGenre().then(r => r);
     }, []);
 
-const handleNavigate=(id)=>{ navigate(`/react-test/${id}`)}
+const handleNavigate=(id)=>{ navigate(`/Movies/${id}`)}
     return (
         <>
 
@@ -33,7 +33,7 @@ const handleNavigate=(id)=>{ navigate(`/react-test/${id}`)}
             <div>
                 <nav className="navbar navbar-expand-lg navbar-dark bg-dark text-white  ">
                     <div className="container-fluid">
-                        <a className="navbar-brand" href="/react-test">Home</a>
+                        <a className="navbar-brand" href="/Movies">Home</a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -47,8 +47,8 @@ const handleNavigate=(id)=>{ navigate(`/react-test/${id}`)}
                                         Register
                                     </a>
                                     <ul className="dropdown-menu dropdown-menu-dark m-0 ">
-                                        <li><Link className="dropdown-item" to="/react-test/login">login</Link></li>
-                                        <li><Link className="dropdown-item" to="/react-test/signup">Signup</Link></li>
+                                        <li><Link className="dropdown-item" to="/Movies/login">login</Link></li>
+                                        <li><Link className="dropdown-item" to="/Movies/signup">Signup</Link></li>
 
                                     </ul>
                                 </li>

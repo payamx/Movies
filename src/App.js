@@ -18,7 +18,7 @@ function App() {
         <div>
                     <BrowserRouter >
                                 <Routes>
-                                    <Route path="react-test"  element={<SharedLinks/>} >
+                                    <Route path="Movies"  element={<SharedLinks/>} >
                                         <Route  index  element={<Home/>}/>
                                         <Route  path="movies/:cardId" element={<SingleCard/>}/>
                                         <Route  path=":newId" element={<GenreCardList/>}/>
