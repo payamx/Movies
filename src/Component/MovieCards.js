@@ -3,7 +3,7 @@ import {useNavigate ,Link} from "react-router-dom";
 const MovieCards = ({cardData}) => {
     let navigate = useNavigate();
     const handelClick = (id) => {
-        navigate(`/react-test/movies/${id}`)
+        navigate(`/Movies/movies/${id}`)
 
     }
 
